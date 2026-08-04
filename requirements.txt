@@ -1,0 +1,34 @@
+# ==============================================================================
+# Requirements for Robotic Vision & Simulation Project
+# ==============================================================================
+
+# --- Core Simulation & Robotics ---
+pybullet
+opencv-python
+numpy
+
+# --- Deep Learning & Computer Vision (Model & Detection) ---
+torch
+torchvision
+ultralytics
+anomalib>=1.0.0
+roboflow
+
+# --- Hugging Face Ecosystem ---
+transformers
+huggingface-hub
+hf-transfer
+
+# --- Data Science, Processing & Visualization ---
+pandas
+matplotlib
+seaborn
+Pillow
+PyYAML
+tqdm
+gdown
+
+# --- Jupyter Notebook Environment ---
+jupyter
+notebook
+ipykernel

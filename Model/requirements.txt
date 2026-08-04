@@ -1,0 +1,30 @@
+# ==============================================================================
+# Requirements for Model & Training Component
+# ==============================================================================
+
+# Deep Learning & Computer Vision Training
+torch
+torchvision
+ultralytics
+anomalib>=1.0.0
+roboflow
+
+# Hugging Face Ecosystem
+transformers
+huggingface-hub
+hf-transfer
+
+# Data Processing, Analysis & Visualization
+numpy
+pandas
+matplotlib
+seaborn
+opencv-python
+Pillow
+PyYAML
+tqdm
+
+# Jupyter Notebook Environment
+jupyter
+notebook
+ipykernel

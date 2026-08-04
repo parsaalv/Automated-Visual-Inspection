@@ -1,0 +1,18 @@
+# ==============================================================================
+# Requirements for Simulator Component
+# ==============================================================================
+
+# Core Simulation & Physics Engine
+pybullet
+
+# Vision & Numerical Utilities
+opencv-python
+numpy
+
+# Inference & Vision Models (used by vision.py)
+torch
+ultralytics
+anomalib>=1.0.0
+
+# Asset Download Utility
+gdown
