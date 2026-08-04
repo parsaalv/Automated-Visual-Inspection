@@ -26,6 +26,7 @@ The end-to-end pipeline consists of:
 For a full technical deep-dive into the dataset curation, training methodology, evaluation metrics, and experimental results, please refer to our detailed reports:
 
 📄 **English Report:** [Docs/EN_report.pdf](Docs/EN_report.pdf)
+
 📄 **Persian Report (گزارش فارسی):** [Docs/FA_report.pdf](Docs/FA_report.pdf)
 
 For component-specific documentation, see:
