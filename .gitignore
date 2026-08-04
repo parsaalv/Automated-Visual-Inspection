@@ -13,6 +13,7 @@ __pycache__/
 
 # Machine Learning & Model Outputs / Datasets
 anomalib_outputs/
+yolo_model/
 runs/
 *.pt
 *.onnx

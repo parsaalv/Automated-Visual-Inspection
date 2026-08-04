@@ -66,7 +66,7 @@ class Config:
     VISION_RANDOM_SEED    = None
 
     # --- Real Vision Pipeline (YOLOv8 part detection -> PatchCore defect detection) ---
-    YOLO_WEIGHTS_PATH   = os.path.join("industrial_parts_det-2", "weights", "best.pt")
+    YOLO_WEIGHTS_PATH   = os.path.join("yolo_model", "weights", "best.pt")
     # Folder containing the anomaly-detection models (base/ResNet-18 version);
     # expected structure: anomalib_outputs/{class_name}/**/*.pt
     ANOMALY_BASE_DIR    = "anomalib_outputs"

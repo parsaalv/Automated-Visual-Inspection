@@ -68,18 +68,18 @@ if not exist "anomalib_outputs" (
     echo [OK] 'anomalib_outputs' folder present.
 )
 
-:: 5. Check and Download industrial_parts_det-2 dataset/weights folder
+:: 5. Check and Download yolo_model dataset/weights folder
 echo.
-echo [4/4] Checking model asset: industrial_parts_det-2...
-if not exist "industrial_parts_det-2" (
-    echo [INFO] 'industrial_parts_det-2' folder not found. Downloading from Google Drive...
-    python -m gdown --folder "https://drive.google.com/drive/folders/1qxHBJZB8lC476KrMKF-iHAyKYWUKUoGm" -O industrial_parts_det-2
+echo [4/4] Checking model asset: yolo_model...
+if not exist "yolo_model" (
+    echo [INFO] 'yolo_model' folder not found. Downloading from Google Drive...
+    python -m gdown --folder "https://drive.google.com/drive/folders/1qxHBJZB8lC476KrMKF-iHAyKYWUKUoGm" -O yolo_model
     if %errorlevel% neq 0 (
-        echo [WARNING] Automatic download of industrial_parts_det-2 failed. Please download manually from:
+        echo [WARNING] Automatic download of yolo_model failed. Please download manually from:
         echo https://drive.google.com/drive/folders/1qxHBJZB8lC476KrMKF-iHAyKYWUKUoGm
     )
 ) else (
-    echo [OK] 'industrial_parts_det-2' folder present.
+    echo [OK] 'yolo_model' folder present.
 )
 
 echo.

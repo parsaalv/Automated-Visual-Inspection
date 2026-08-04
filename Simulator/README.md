@@ -11,7 +11,7 @@ To run the simulator, you **do not** need to manually install dependencies or fe
 ### What `run_sim.bat` does automatically:
 1. Creates a local Python virtual environment (`.venv`).
 2. Installs all required packages defined in `requirements.txt`.
-3. Downloads the YOLOv8 object detection model weights (`industrial_parts_det-2`).
+3. Downloads the YOLOv8 object detection model weights (`yolo_model`).
 4. Downloads the PatchCore anomaly detection model weights (`anomalib_outputs`).
 5. Launches `main.py` directly inside the virtual environment.
 
