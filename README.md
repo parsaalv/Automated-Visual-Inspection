@@ -23,8 +23,10 @@ The end-to-end pipeline consists of:
 3. **Anomaly Detection & Segmentation (PatchCore)** — A memory-bank-based, unsupervised anomaly detection algorithm trained exclusively on nominal (defect-free) samples, capable of flagging and localizing unseen defect types with pixel-level precision.
 4. **Digital Twin Simulation (PyBullet)** — A virtual conveyor-belt factory line where simulated parts are inspected in real time by the trained models, and a robotic arm automatically sorts defective parts into **Repair** or **Scrap** bins based on the inspection result.
 
-For a full technical deep-dive into the dataset curation, training methodology, evaluation metrics, and experimental results, see the detailed report:
-📄 **[Docs/EN_Latex/main.tex](Docs/EN_Latex/main.tex)**
+For a full technical deep-dive into the dataset curation, training methodology, evaluation metrics, and experimental results, please refer to our detailed reports:
+
+📄 **English Report:** [Docs/EN_report.pdf](Docs/EN_report.pdf)
+📄 **Persian Report (گزارش فارسی):** [Docs/FA_report.pdf](Docs/FA_report.pdf)
 
 For component-specific documentation, see:
 - 📓 **[Model/README.md](Model/README.md)** — Model training pipeline (YOLOv8n + PatchCore).
