@@ -1,46 +1,65 @@
-# Robotic Vision & Simulation Project (Digital Twin Framework)
+# Automated Visual Inspection: From Object Detection to Anomaly Segmentation
 
-Welcome to the **Robotic Vision & Simulation Project**! This repository hosts a complete Digital Twin framework integrating rigid-body physics simulation (PyBullet) with state-of-the-art Deep Learning models for real-time industrial component inspection and defect detection.
+**Courses:** Robotic & Computer Vision | Introduction to Machine Learning
+**Professors:** Dr. Hamidreza Taghirad, Amirhossein Nikoofard, Mohammad Javad Ahmadi
 
-For a comprehensive technical deep-dive into the theoretical and engineering aspects of this project, please refer to the detailed documentation located at:
-📄 **[Docs/RV-E/main.tex](Docs/RV-E/main.tex)**
+**Team Members:**
+- Mostafa Latifian — 40122193
+- Parsa Alavinikoo — 40120993
+- Hamidreza Abedini — 40120633
 
 ---
 
-## 🚀 Quick Start (Simulation)
+## 📖 Project Overview
 
-To launch the simulation environment with all necessary dependencies and AI models automatically handled, simply run the root batch script:
+This repository presents a complete **Digital Twin framework** for automated industrial visual inspection, combining a physics-based simulation environment (PyBullet) with a two-stage deep learning inspection pipeline.
+
+In real production lines, defective components are rare and highly diverse in appearance, making traditional supervised classification impractical. To address this, the project follows a modern **data-centric, unsupervised anomaly detection** approach built on top of the **MVTec AD** dataset, covering six industrial component classes: `bottle`, `cable`, `metal_nut`, `screw`, `toothbrush`, and `transistor`.
+
+The end-to-end pipeline consists of:
+
+1. **Dataset Engineering** — Automated ingestion, filtering, and curation of the MVTec AD dataset, including a Roboflow-based re-annotation pass to fix structurally flawed transistor labels.
+2. **Object Localization (YOLOv8n)** — A lightweight object detector trained (via classical CV auto-annotation) to locate and crop industrial parts from the camera frame, isolating them from background noise.
+3. **Anomaly Detection & Segmentation (PatchCore)** — A memory-bank-based, unsupervised anomaly detection algorithm trained exclusively on nominal (defect-free) samples, capable of flagging and localizing unseen defect types with pixel-level precision.
+4. **Digital Twin Simulation (PyBullet)** — A virtual conveyor-belt factory line where simulated parts are inspected in real time by the trained models, and a robotic arm automatically sorts defective parts into **Repair** or **Scrap** bins based on the inspection result.
+
+For a full technical deep-dive into the dataset curation, training methodology, evaluation metrics, and experimental results, see the detailed report:
+📄 **[Docs/EN_Latex/main.tex](Docs/EN_Latex/main.tex)**
+
+For component-specific documentation, see:
+- 📓 **[Model/README.md](Model/README.md)** — Model training pipeline (YOLOv8n + PatchCore).
+- 🤖 **[Simulator/README.md](Simulator/README.md)** — PyBullet digital twin and real-time inference engine.
+
+---
+
+## ⚙️ Setup and Installation
+
+### 1. Get the Repository
+
+You can obtain a local copy of this project in one of two ways:
+
+**Option A — Clone with Git**
+```bash
+git clone https://github.com/parsaalv/Automated-Visual-Inspection.git
+cd Automated-Visual-Inspection
+```
+
+**Option B — Download as ZIP**
+1. Navigate to the repository page on GitHub.
+2. Click the green **Code** button, then select **Download ZIP**.
+3. Extract the archive to a folder of your choice.
+
+### 2. Run the Simulator
+
+Once you have the repository locally, simply launch the root batch script:
 
 ▶️ **[`run_sim.bat`](run_sim.bat)**
 
-This script will seamlessly set up a virtual environment, install all requirements, and download the pre-trained weights from Google Drive. 
-*If you encounter any issues during startup (such as missing C++ Build Tools for PyBullet), please read the [Simulator README](Simulator/README.md) for troubleshooting.*
+This script automatically creates a virtual environment, installs all dependencies, downloads the pre-trained model weights, and starts the simulation. See **[Simulator/README.md](Simulator/README.md)** for full details and troubleshooting steps.
 
----
+> 💡 **Testing with Your Own Images**
+> Want to try the system with parts other than the default MVTec AD samples? Simply drop your own images (belonging to one of the trained classes: `screw`, `metal_nut`, `transistor`, `cable`, `bottle`, `toothbrush`) into the **`Simulator/data`** directory. When run in `real` vision mode, the simulator will automatically pick up any images placed there and feed them through the YOLO + PatchCore inspection pipeline — no code changes required.
 
-## 🧠 AI Architecture: YOLOv8 & PatchCore
+### 3. (Optional) Explore or Retrain the Models
 
-Our computer vision pipeline utilizes a **two-stage inspection architecture** to ensure robust anomaly detection while maintaining real-time execution speeds suitable for industrial conveyor belts.
-
-### 1. Object Localization (YOLOv8)
-Before inspecting for defects, the system must accurately locate the component on the moving conveyor. We utilize **YOLOv8n**, a lightweight and highly efficient object detection network trained on a custom, Roboflow-refined dataset. YOLO extracts the exact region of interest (ROI) and crops the component out of the noisy background.
-
-### 2. Anomaly Detection & Segmentation (PatchCore)
-For identifying microscopic surface defects, scratches, and deformations, we employ the **PatchCore** algorithm. Instead of analyzing raw images, PatchCore uses pre-trained Convolutional Neural Networks (CNNs) to extract deep spatial features, storing nominal patterns in a memory bank using Coreset Subsampling.
-
-**Why ResNet-18 for the Simulator?**
-While our extensive training experiments evaluated advanced, high-capacity models (like Wide ResNet-50) for extreme precision, **we selected the lightweight ResNet-18 backbone for the PyBullet Simulator.** 
-ResNet-18 strikes the perfect engineering balance—it is deep enough to capture complex textures, yet fast enough to guarantee real-time Frame Per Second (FPS) inference rates without blocking the physics engine's main loop.
-
----
-
-## 📓 Model Training & Notebook Environment
-
-If you want to view, retrain, or experiment with the model architectures directly, the complete training pipeline is available in the Jupyter Notebook located in the `Model/` directory.
-
-We have automated the environment setup so you **do not** need to manually execute the `!pip install` cells inside the notebook again. 
-
-To easily set up your notebook environment, simply run:
-▶️ **[`Model/run_model_setup.bat`](Model/run_model_setup.bat)**
-
-For more details on running the notebook and managing its dependencies, please read the **[Model README](Model/README.md)**.
+If you'd like to inspect, modify, or retrain the underlying detection and anomaly models, see **[Model/README.md](Model/README.md)** for instructions on setting up the training notebook environment.
