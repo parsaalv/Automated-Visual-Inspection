@@ -8,6 +8,8 @@ one place.
 
 import os
 
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 class Config:
     """Static configuration container for the entire simulation.
@@ -66,10 +68,10 @@ class Config:
     VISION_RANDOM_SEED    = None
 
     # --- Real Vision Pipeline (YOLOv8 part detection -> PatchCore defect detection) ---
-    YOLO_WEIGHTS_PATH   = os.path.join("yolo_model", "weights", "best.pt")
+    YOLO_WEIGHTS_PATH   = os.path.join(_BASE_DIR, "yolo_model", "weights", "best.pt")
     # Folder containing the anomaly-detection models (base/ResNet-18 version);
     # expected structure: anomalib_outputs/{class_name}/**/*.pt
-    ANOMALY_BASE_DIR    = "anomalib_outputs"
+    ANOMALY_BASE_DIR    = os.path.join(_BASE_DIR, "anomalib_outputs")
     YOLO_CONF_THRESHOLD = 0.3   # Matches the cropping stage used in the notebook (conf=0.3)
     CROP_PADDING        = 0    # Pixels; matches get_crop_coords in the notebook
     # Decision thresholds applied to PatchCore's pred_score output (range 0 to 1)

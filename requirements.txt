@@ -4,7 +4,7 @@
 
 # --- Core Simulation & Robotics ---
 pybullet
-opencv-python
+opencv-python>=4.8.0.76
 numpy
 
 # --- Deep Learning & Computer Vision (Model & Detection) ---

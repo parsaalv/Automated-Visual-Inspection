@@ -1,0 +1,228 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\HyPL@Entry{1<</S/D>>}
+\@writefile{toc}{\contentsline {section}{Introduction and Comprehensive Overview of the Dataset}{5}{Doc-Start}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Introduction to the MVTec AD Dataset}{5}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Data Structure and Architecture}{5}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Class Diversity and Processing Challenges}{5}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Data-Centric AI Approach and Custom Preprocessing}{6}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Dataset Collection, Structuring, and Preparation for Reproducibility}{6}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Cloud Storage Integration (Load from Google Drive)}{6}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Data Acquisition and Preparation from Kaggle (Load from Kaggle)}{6}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Data Transfer to Roboflow (Upload to Roboflow)}{8}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Automated Bounding Box Generation}{9}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Rectification and Annotation of Transistor Class in Roboflow}{11}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Extracting the API key from the Roboflow settings panel for script authentication}}{11}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:rf_api}{{1}{11}{Extracting the API key from the Roboflow settings panel for script authentication}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Creating a new project under Object Detection architecture using the Traditional approach}}{12}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:rf_project}{{2}{12}{Creating a new project under Object Detection architecture using the Traditional approach}{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Annotation dashboard and unassigned images in the Roboflow platform}}{12}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:rf_annotate_dashboard}{{3}{12}{Annotation dashboard and unassigned images in the Roboflow platform}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Configuring the Auto Label system using the SAM 3 foundation model}}{13}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:rf_sam3_intro}{{4}{13}{Configuring the Auto Label system using the SAM 3 foundation model}{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Visual verification of the accuracy of masks extracted by SAM 3 for the transistor class}}{13}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:rf_sam3_preview}{{5}{13}{Visual verification of the accuracy of masks extracted by SAM 3 for the transistor class}{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Removing default preprocessing steps during the version generation stage}}{14}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:rf_versions}{{6}{14}{Removing default preprocessing steps during the version generation stage}{figure.caption.7}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces Algorithm for converting Polygon segmentation masks to YOLO bounding boxes}}{14}{lstlisting.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Visual Verification of YOLO Labels}{16}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Visual evaluation of extracted bounding boxes for different dataset classes}}{17}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:visual_verification}{{7}{17}{Visual evaluation of extracted bounding boxes for different dataset classes}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Exploratory Data Analysis (EDA) and Statistical Visualization}{18}{subsection.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Statistical summary of normalized object areas by class (Normalized Area)}}{19}{table.caption.9}\protected@file@percent }
+\newlabel{tab:eda_summary}{{1}{19}{Statistical summary of normalized object areas by class (Normalized Area)}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Analysis of Class Distribution Chart (Class Distribution in Training Set)}{20}{subsubsection.2.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Distribution of training samples across classes}}{20}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:class_distribution}{{8}{20}{Distribution of training samples across classes}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Analysis of Object Size Distribution Chart (Object Size Distribution by Class)}{20}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Distribution of normalized object areas by class}}{21}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:size_distribution}{{9}{21}{Distribution of normalized object areas by class}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Analysis of Bounding Box Dimensions (Width vs. Height Scatter Plot)}{21}{subsubsection.2.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Scatter plot of bounding box width versus height}}{21}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:width_height_scatter}{{10}{21}{Scatter plot of bounding box width versus height}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}YOLOv8n Training}{22}{section.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}{\ignorespaces Implementing the YOLOv8n model training}}{23}{lstlisting.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Training Output Analysis}{24}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Summary of YOLOv8n model evaluation results by class}}{24}{table.caption.13}\protected@file@percent }
+\newlabel{tab:training_results}{{2}{24}{Summary of YOLOv8n model evaluation results by class}{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Temporal \& Resource Analysis}{24}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Model Complexity \& Parameters}{25}{subsubsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Inference Speed \& Real-time Capability}{25}{subsubsection.3.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Performance \& Metrics Breakdown}{25}{subsubsection.3.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Observations, Metrics, and Visual Evaluation}{26}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}IoU Metric}{26}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Analysis of the Normalized Confusion Matrix}{26}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Normalized confusion matrix for evaluating model classification accuracy}}{27}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:confusion_matrix}{{11}{27}{Normalized confusion matrix for evaluating model classification accuracy}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Training Results \& Convergence Analysis}{27}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Evolution of loss functions and evaluation metrics across 30 training epochs}}{28}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:training_results}{{12}{28}{Evolution of loss functions and evaluation metrics across 30 training epochs}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}Quantitative Analysis: Mean IoU Evaluation}{29}{subsubsection.3.2.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Summary of Mean IoU (mIoU) evaluation results by class on the validation dataset}}{29}{table.caption.16}\protected@file@percent }
+\newlabel{tab:mean_iou}{{3}{29}{Summary of Mean IoU (mIoU) evaluation results by class on the validation dataset}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.5}Qualitative Analysis: Visual Assessment of Inference Output}{29}{subsubsection.3.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Visual evaluation of predicted (Pred) vs. ground truth (GT) bounding box alignment alongside calculated IoU scores}}{30}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:inference_iou}{{13}{30}{Visual evaluation of predicted (Pred) vs. ground truth (GT) bounding box alignment alongside calculated IoU scores}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Automated Cropping and Mask Synchronization}{30}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Visual Verification of Mask Synchronization}{32}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Visual verification and evaluation of cropped primary image, ground truth mask, and composite overlay synchronization}}{33}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:visual_sync}{{14}{33}{Visual verification and evaluation of cropped primary image, ground truth mask, and composite overlay synchronization}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Anomaly Detection across All Classes}{34}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}ResNet-18 Training (PatchCore Implementation)}{34}{subsection.5.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}{\ignorespaces Definition of Data Augmentation and Automated Training for the PatchCore Model}}{35}{lstlisting.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}ResNet-18 Evaluation and Metric Extraction}{37}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Final Factory Evaluation Summary by Class}}{38}{table.caption.19}\protected@file@percent }
+\newlabel{tab:final_factory_eval}{{4}{38}{Final Factory Evaluation Summary by Class}{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Image-Level Analysis: Production Line Macro Decision-Making}{38}{subsubsection.5.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Pixel-Level Analysis: Fine-Grained Anomaly Localization}{38}{subsubsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}ResNet-18 5-Panel Inference Engine}{39}{subsection.5.3}\protected@file@percent }
+\newlabel{subsec:5Panel}{{5.3}{39}{ResNet-18 5-Panel Inference Engine}{subsection.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces 5-panel inference evaluation for the bottle class under the broken large (\texttt  {BROKEN\_LARGE}) defect condition}}{41}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:bottle_5panel}{{15}{41}{5-panel inference evaluation for the bottle class under the broken large (\texttt {BROKEN\_LARGE}) defect condition}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces 5-panel inference evaluation for the cable class under the missing wire (\texttt  {MISSING\_WIRE}) defect condition}}{41}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:cable_5panel}{{16}{41}{5-panel inference evaluation for the cable class under the missing wire (\texttt {MISSING\_WIRE}) defect condition}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces 5-panel inference evaluation for the metal nut class under the surface scratch (\texttt  {SCRATCH}) defect condition}}{41}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:metal_nut_5panel}{{17}{41}{5-panel inference evaluation for the metal nut class under the surface scratch (\texttt {SCRATCH}) defect condition}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces 5-panel inference evaluation for the screw class under the neck scratch (\texttt  {SCRATCH\_NECK}) defect condition}}{42}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:screw_5panel}{{18}{42}{5-panel inference evaluation for the screw class under the neck scratch (\texttt {SCRATCH\_NECK}) defect condition}{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces 5-panel inference evaluation for the toothbrush class under the defective bristle (\texttt  {DEFECTIVE}) condition}}{42}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:toothbrush_5panel}{{19}{42}{5-panel inference evaluation for the toothbrush class under the defective bristle (\texttt {DEFECTIVE}) condition}{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces 5-panel inference evaluation for the transistor class under the damaged casing (\texttt  {DAMAGED\_CASE}) condition}}{43}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:transistor_5panel}{{20}{43}{5-panel inference evaluation for the transistor class under the damaged casing (\texttt {DAMAGED\_CASE}) condition}{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}ResNet-50 Training (PatchCore Implementation)}{43}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}ResNet-50 Evaluation and Metrics Extraction}{43}{subsection.5.5}\protected@file@percent }
+\newlabel{subsec:RS50}{{5.5}{43}{ResNet-50 Evaluation and Metrics Extraction}{subsection.5.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Evaluation summary of the PatchCore model with Wide\_ResNet50\_2 backbone across target classes}}{44}{table.caption.26}\protected@file@percent }
+\newlabel{tab:wide_resnet50_eval}{{5}{44}{Evaluation summary of the PatchCore model with Wide\_ResNet50\_2 backbone across target classes}{table.caption.26}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}Image-Level Analysis: Production Line Macro Decision-Making}{44}{subsubsection.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}Pixel-Level Analysis: Precise Anomaly Localization}{44}{subsubsection.5.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}ResNet-50 5-Panel Inference Engine}{45}{subsection.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Comprehensive Analysis and Comparison: ResNet-18 vs. Wide\_ResNet50\_2}{45}{subsection.5.7}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Technical and hardware metric comparison between ResNet-18 and Wide\_ResNet50\_2 models}}{46}{table.caption.27}\protected@file@percent }
+\newlabel{tab:hardware_comparison}{{6}{46}{Technical and hardware metric comparison between ResNet-18 and Wide\_ResNet50\_2 models}{table.caption.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Visual Comparison}{47}{subsection.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.1}Visual Performance Comparison in the Bottle Class (BOTTLE)}{47}{subsubsection.5.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces 5-panel evaluation of the bottle class using the ResNet-18 model}}{47}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:bottle_resnet18}{{21}{47}{5-panel evaluation of the bottle class using the ResNet-18 model}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces 5-panel evaluation of the bottle class using the Wide\_ResNet50\_2 model}}{48}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:bottle_resnet50}{{22}{48}{5-panel evaluation of the bottle class using the Wide\_ResNet50\_2 model}{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.2}Visual Performance Comparison in the Cable Class (CABLE)}{48}{subsubsection.5.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces 5-panel evaluation of the cable class using the ResNet-18 model}}{48}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:cable_resnet18}{{23}{48}{5-panel evaluation of the cable class using the ResNet-18 model}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces 5-panel evaluation of the cable class using the Wide\_ResNet50\_2 model}}{48}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:cable_resnet50}{{24}{48}{5-panel evaluation of the cable class using the Wide\_ResNet50\_2 model}{figure.caption.31}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.3}Visual Performance Comparison in the Metal Nut Class (Metal\_Nut)}{49}{subsubsection.5.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.4}Visual Performance Comparison in the Screw Class (SCREW)}{49}{subsubsection.5.8.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces 5-panel evaluation of the screw class using the ResNet-18 model}}{49}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:screw_resnet18}{{25}{49}{5-panel evaluation of the screw class using the ResNet-18 model}{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces 5-panel evaluation of the screw class using the Wide\_ResNet50\_2 model}}{49}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:screw_resnet50}{{26}{49}{5-panel evaluation of the screw class using the Wide\_ResNet50\_2 model}{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.5}Visual Performance Comparison in the Toothbrush Class (ToothBrush)}{50}{subsubsection.5.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.6}Visual Performance Comparison in the Transistor Class (TRANSISTOR)}{50}{subsubsection.5.8.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces 5-panel evaluation of the transistor class using the ResNet-18 model}}{50}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:transistor_resnet18}{{27}{50}{5-panel evaluation of the transistor class using the ResNet-18 model}{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces 5-panel evaluation of the transistor class using the Wide\_ResNet50\_2 model}}{51}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:transistor_resnet50}{{28}{51}{5-panel evaluation of the transistor class using the Wide\_ResNet50\_2 model}{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Packaging and Deployment Readiness}{51}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Simulation}{52}{section.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Flowchart of simulation modules}}{52}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:fig33}{{29}{52}{Flowchart of simulation modules}{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Simulation Section Documentation: The \texttt  {config.py} Module}{53}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}Module Overview}{53}{subsubsection.7.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}Design Objectives}{53}{subsubsection.7.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}Role within the Overall System}{53}{subsubsection.7.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.4}General Structure and Key Components}{53}{subsubsection.7.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.5}Mode of Operation}{54}{subsubsection.7.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.6}Inter-Module Connectivity}{54}{subsubsection.7.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.7}Summary}{54}{subsubsection.7.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Simulation Section Documentation: The \texttt  {logging\_config.py} Module}{55}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}Module Overview}{55}{subsubsection.7.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.2}Design Objectives}{55}{subsubsection.7.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.3}Role within the Overall System}{55}{subsubsection.7.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.4}General Structure and Key Components}{55}{subsubsection.7.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.5}Mode of Operation}{55}{subsubsection.7.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.6}Inter-Module Connectivity}{56}{subsubsection.7.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.7}Summary}{56}{subsubsection.7.2.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Simulation Section Documentation: The \texttt  {urdf\_utils.py} Module}{56}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Module Overview}{56}{subsubsection.7.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Design Objectives}{56}{subsubsection.7.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.3}Role within the Overall System}{56}{subsubsection.7.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.4}General Structure and Key Components}{57}{subsubsection.7.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.5}Mode of Operation}{57}{subsubsection.7.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6}Inter-Module Connectivity}{57}{subsubsection.7.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.7}Summary}{58}{subsubsection.7.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Simulation Section Documentation: The \texttt  {objects.py} Module}{58}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.1}Module Overview}{58}{subsubsection.7.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.2}Design Objectives}{58}{subsubsection.7.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.3}Role within the Overall System}{58}{subsubsection.7.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.4}General Structure and Key Components}{58}{subsubsection.7.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.5}Mode of Operation}{59}{subsubsection.7.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.6}Inter-Module Connectivity}{59}{subsubsection.7.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.7}Summary}{60}{subsubsection.7.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Simulation Section Documentation: The \texttt  {conveyor.py} Module}{60}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.1}Module Overview}{60}{subsubsection.7.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.2}Design Objectives}{60}{subsubsection.7.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.3}Role within the Overall System}{60}{subsubsection.7.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.4}General Structure and Key Components}{60}{subsubsection.7.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.5}Mode of Operation}{61}{subsubsection.7.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.6}Inter-Module Connectivity}{61}{subsubsection.7.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.7}Summary}{61}{subsubsection.7.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Simulation Section Documentation: The \texttt  {camera.py} Module}{62}{subsection.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.1}Module Overview}{62}{subsubsection.7.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.2}Design Objectives}{62}{subsubsection.7.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.3}Role within the Overall System}{62}{subsubsection.7.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.4}General Structure and Key Components}{62}{subsubsection.7.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.5}Mode of Operation}{62}{subsubsection.7.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.6}Inter-Module Connectivity}{63}{subsubsection.7.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.6.7}Summary}{63}{subsubsection.7.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Simulation Section Documentation: The \texttt  {vision.py} Module}{63}{subsection.7.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.1}Module Overview}{63}{subsubsection.7.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.2}Design Objectives}{64}{subsubsection.7.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.3}Role within the Overall System}{64}{subsubsection.7.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.4}General Structure and Key Components}{64}{subsubsection.7.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.5}Mode of Operation}{64}{subsubsection.7.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.6}Inter-Module Connectivity}{65}{subsubsection.7.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.7.7}Summary}{65}{subsubsection.7.7.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.8}Simulation Section Documentation: The \texttt  {robot.py} Module}{66}{subsection.7.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.1}Module Overview}{66}{subsubsection.7.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.2}Design Objectives}{66}{subsubsection.7.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.3}Role within the Overall System}{66}{subsubsection.7.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.4}General Structure and Key Components}{66}{subsubsection.7.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.5}Mode of Operation}{66}{subsubsection.7.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.6}Inter-Module Connectivity}{67}{subsubsection.7.8.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.8.7}Summary}{67}{subsubsection.7.8.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.9}Simulation Section Documentation: The \texttt  {controller.py} Module}{68}{subsection.7.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.1}Module Overview}{68}{subsubsection.7.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.2}Design Objectives}{68}{subsubsection.7.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.3}Role within the Overall System}{68}{subsubsection.7.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.4}General Structure and Key Components}{68}{subsubsection.7.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.5}Mode of Operation}{69}{subsubsection.7.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.6}Inter-Module Connectivity}{69}{subsubsection.7.9.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.9.7}Summary}{70}{subsubsection.7.9.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.10}Simulation Section Documentation: The \texttt  {simulation.py} Module}{70}{subsection.7.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.1}Module Overview}{70}{subsubsection.7.10.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.2}Design Objectives}{70}{subsubsection.7.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.3}Role within the Overall System}{70}{subsubsection.7.10.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.4}General Structure and Key Components}{70}{subsubsection.7.10.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.5}Mode of Operation}{71}{subsubsection.7.10.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.6}Inter-Module Connectivity}{71}{subsubsection.7.10.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.10.7}Summary}{72}{subsubsection.7.10.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.11}Simulation Section Documentation: The \texttt  {main.py} Execution Script}{72}{subsection.7.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.11.1}Script Overview}{72}{subsubsection.7.11.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.11.2}Design Objectives}{72}{subsubsection.7.11.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.11.3}Execution Flow and Simulation Lifecycle}{72}{subsubsection.7.11.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.11.4}Exception Handling and Resource Teardown}{73}{subsubsection.7.11.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Performance Evaluation and Execution Results}{73}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}System Initialization}{73}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Inference Pipeline Analysis}{74}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Cyber-Physical Synchronization}{74}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Live Monitoring User Interface}{74}{subsection.8.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Graphical simulation output and live visual monitoring display.}}{75}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:fig31}{{30}{75}{Graphical simulation output and live visual monitoring display}{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Real-time defect segmentation and bounding box overlay interface.}}{75}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:fig32}{{31}{75}{Real-time defect segmentation and bounding box overlay interface}{figure.caption.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Execution Summary}{75}{subsection.8.5}\protected@file@percent }
+\gdef \@abspage@last{76}

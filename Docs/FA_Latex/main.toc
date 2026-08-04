@@ -1,0 +1,142 @@
+\contentsline {section}{مقدمه و معرفی جامع دیتاست}{5}{Doc-Start}%
+\contentsline {subsection}{معرفی دیتاست MVTec AD}{5}{section*.1}%
+\contentsline {subsection}{ساختار و معماری داده‌ها}{5}{section*.1}%
+\contentsline {subsection}{تنوع کلاس‌ها و چالش‌های پردازشی}{5}{section*.1}%
+\contentsline {subsection}{رویکرد داده‌محور (\lr {Data-Centric AI}) و پیش‌پردازش سفارشی}{5}{section*.1}%
+\contentsline {section}{\numberline {1}گردآوری مجموعه داده، ساختاردهی و آماده‌سازی برای تکرارپذیری}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}اتصال به فضای ذخیره‌سازی ابری (\lr {Load from Google Drive})}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}دریافت و آماده‌سازی داده‌ها از کگل (\lr {Load from Kaggle})}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}ارسال داده‌ها به روبوفلو (\lr {Upload to Roboflow})}{7}{subsection.1.3}%
+\contentsline {section}{\numberline {2}تولید خودکار کادر محصورکننده}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}اصلاح و حاشیه‌نویسی کلاس ترانزیستور در \lr {Roboflow}}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}تأیید بصری برچسب‌های \lr {YOLO}}{15}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}تحلیل اکتشافی داده‌ها \lr {(EDA)} و بصری‌سازی آماری}{17}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}تحلیل نمودار توزیع کلاس‌ها (\lr {Class Distribution in Training Set})}{18}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}تحلیل نمودار پراکندگی مساحت اشیاء (\lr {Object Size Distribution by Class})}{19}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}تحلیل نمودار ابعاد کادر دربرگیرنده (\lr {Width vs. Height Scatter Plot})}{19}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3}آموزش \lr {YOLOv8n}}{20}{section.3}%
+\contentsline {subsection}{\numberline {3.1}تحلیل خروجی آموزش}{22}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}تحلیل زمان‌بندی و مصرف منابع سخت‌افزاری (\lr {Temporal \& Resource Analysis})}{22}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}پیچیدگی مدل و تحلیل پارامترها (\lr {Model Complexity \& Parameters})}{22}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}سرعت استنتاج و قابلیت بلادرنگ (\lr {Inference Speed \& Real-time Capability})}{22}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}تحلیل متریک‌های دقت (\lr {Performance \& Metrics Breakdown})}{23}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}مشاهده، معیارها و ارزیابی بصری}{23}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}متریک \lr {IoU}}{23}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}تحلیل ماتریس درهم‌ریختگی نرمال‌شده (\lr {Normalized Confusion Matrix})}{24}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}تحلیل روند هم‌گرایی و نتایج آموزش (\lr {Training Results \& Convergence})}{25}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}تحلیل کمی: ارزیابی جدول \lr {Mean IoU}}{26}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}تحلیل کیفی: ارزیابی بصری تصویر استنتاج (\lr {Visual \& Qualitative Analysis})}{26}{subsubsection.3.2.5}%
+\contentsline {section}{\numberline {4}برش خودکار و همگام‌سازی ماسک}{27}{section.4}%
+\contentsline {subsection}{\numberline {4.1}تأیید بصری همگام‌سازی ماسک}{29}{subsection.4.1}%
+\contentsline {section}{\numberline {5}تشخیص ناهنجاری برای تمام کلاس‌ها}{30}{section.5}%
+\contentsline {subsection}{\numberline {5.1}آموزش \lr {ResNet-18} (پیاده‌سازی \lr {PatchCore})}{30}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}ارزیابی و استخراج معیارهای \lr {ResNet-18}}{33}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}تحلیل سطح تصویر: تصمیم‌گیری کلان خط تولید (\lr {Image-Level Metrics})}{33}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}تحلیل سطح پیکسل: مکان‌یابی دقیق ناهنجاری (\lr {Pixel-Level Metrics})}{34}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}موتور استنتاج ۵-پنلی \lr {ResNet-18}}{34}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}آموزش \lr {ٌResnet-50} (پیاده‌سازی \lr {PatchCore})}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}ارزیابی و استخراج معیارهای \lr {ResNet-50}}{38}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}تحلیل سطح تصویر: تصمیم‌گیری کلان خط تولید (\lr {Image-Level Metrics})}{38}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}تحلیل سطح پیکسل: مکان‌یابی دقیق ناهنجاری (\lr {Pixel-Level Metrics})}{39}{subsubsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.6}موتور استنتاج ۵-پنلی \lr {ResNet-50}}{39}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}تحلیل و مقایسه جامع: \lr {ResNet-18} در برابر \lr {Wide\_ResNet50\_2}}{39}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}مقایسه به صورت بصری}{41}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}مقایسه بصری عملکرد مدل‌ها در کلاس بطری (\lr {BOTTLE})}{41}{subsubsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.2}مقایسه بصری عملکرد مدل‌ها در کلاس کابل (\lr {CABLE})}{42}{subsubsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.3}مقایسه بصری عملکرد مدل‌ها در کلاس مهره فلزی \lr {Metal\_Nut}}{43}{subsubsection.5.8.3}%
+\contentsline {subsubsection}{\numberline {5.8.4}مقایسه بصری عملکرد مدل‌ها در کلاس پیچ (\lr {SCREW})}{43}{subsubsection.5.8.4}%
+\contentsline {subsubsection}{\numberline {5.8.5}مقایسه بصری عملکرد مدل‌ها در کلاس مسواک و \lr {ToothBrush}}{44}{subsubsection.5.8.5}%
+\contentsline {subsubsection}{\numberline {5.8.6}مقایسه بصری عملکرد مدل‌ها در کلاس ترانزیستور (\lr {TRANSISTOR})}{44}{subsubsection.5.8.6}%
+\contentsline {section}{\numberline {6}بسته‌بندی و آمادگی برای استقرار (\lr {Packaging \& Deployment Readiness})}{44}{section.6}%
+\contentsline {section}{\numberline {7}شبیه‌سازی}{46}{section.7}%
+\contentsline {subsection}{\numberline {7.1}مستندسازی بخش شبیه‌سازی: ماژول \lr {config.py}}{46}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}معرفی ماژول}{46}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}هدف طراحی}{46}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}نقش ماژول در کل سیستم}{46}{subsubsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.4}ساختار کلی و اجزای مهم}{46}{subsubsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.5}نحوه عملکرد}{47}{subsubsection.7.1.5}%
+\contentsline {subsubsection}{\numberline {7.1.6}ارتباط با سایر ماژول‌ها}{47}{subsubsection.7.1.6}%
+\contentsline {subsubsection}{\numberline {7.1.7}جمع‌بندی}{47}{subsubsection.7.1.7}%
+\contentsline {subsection}{\numberline {7.2}مستندسازی بخش شبیه‌سازی: ماژول \lr {logging\_config.py}}{48}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}معرفی ماژول}{48}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}هدف طراحی}{48}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}نقش ماژول در کل سیستم}{48}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}ساختار کلی و اجزای مهم}{48}{subsubsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.5}نحوه عملکرد}{48}{subsubsection.7.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.6}ارتباط با سایر ماژول‌ها}{48}{subsubsection.7.2.6}%
+\contentsline {subsubsection}{\numberline {7.2.7}جمع‌بندی}{49}{subsubsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.3}مستندسازی بخش شبیه‌سازی: ماژول \lr {urdf\_utils.py}}{49}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}معرفی ماژول}{49}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}هدف طراحی}{49}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}نقش ماژول در کل سیستم}{49}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}ساختار کلی و اجزای مهم}{49}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.5}نحوه عملکرد}{50}{subsubsection.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.6}ارتباط با سایر ماژول‌ها}{50}{subsubsection.7.3.6}%
+\contentsline {subsubsection}{\numberline {7.3.7}جمع‌بندی}{50}{subsubsection.7.3.7}%
+\contentsline {subsection}{\numberline {7.4}مستندسازی بخش شبیه‌سازی: ماژول \lr {objects.py}}{50}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}معرفی ماژول}{50}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}هدف طراحی}{51}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}نقش ماژول در کل سیستم}{51}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}ساختار کلی و اجزای مهم}{51}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.5}نحوه عملکرد}{51}{subsubsection.7.4.5}%
+\contentsline {subsubsection}{\numberline {7.4.6}ارتباط با سایر ماژول‌ها}{52}{subsubsection.7.4.6}%
+\contentsline {subsubsection}{\numberline {7.4.7}جمع‌بندی}{52}{subsubsection.7.4.7}%
+\contentsline {subsection}{\numberline {7.5}مستندسازی بخش شبیه‌سازی: ماژول \lr {conveyor.py}}{52}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}معرفی ماژول}{52}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}هدف طراحی}{52}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}نقش ماژول در کل سیستم}{52}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}ساختار کلی و اجزای مهم}{52}{subsubsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.5}نحوه عملکرد}{53}{subsubsection.7.5.5}%
+\contentsline {subsubsection}{\numberline {7.5.6}ارتباط با سایر ماژول‌ها}{53}{subsubsection.7.5.6}%
+\contentsline {subsubsection}{\numberline {7.5.7}جمع‌بندی}{53}{subsubsection.7.5.7}%
+\contentsline {subsection}{\numberline {7.6}مستندسازی بخش شبیه‌سازی: ماژول \lr {camera.py}}{53}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}معرفی ماژول}{53}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}هدف طراحی}{54}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}نقش ماژول در کل سیستم}{54}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}ساختار کلی و اجزای مهم}{54}{subsubsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.5}نحوه عملکرد}{54}{subsubsection.7.6.5}%
+\contentsline {subsubsection}{\numberline {7.6.6}ارتباط با سایر ماژول‌ها}{55}{subsubsection.7.6.6}%
+\contentsline {subsubsection}{\numberline {7.6.7}جمع‌بندی}{55}{subsubsection.7.6.7}%
+\contentsline {subsection}{\numberline {7.7}مستندسازی بخش شبیه‌سازی: ماژول \lr {vision.py}}{55}{subsection.7.7}%
+\contentsline {subsubsection}{\numberline {7.7.1}معرفی ماژول}{55}{subsubsection.7.7.1}%
+\contentsline {subsubsection}{\numberline {7.7.2}هدف طراحی}{55}{subsubsection.7.7.2}%
+\contentsline {subsubsection}{\numberline {7.7.3}نقش ماژول در کل سیستم}{55}{subsubsection.7.7.3}%
+\contentsline {subsubsection}{\numberline {7.7.4}ساختار کلی و اجزای مهم}{56}{subsubsection.7.7.4}%
+\contentsline {subsubsection}{\numberline {7.7.5}نحوه عملکرد}{56}{subsubsection.7.7.5}%
+\contentsline {subsubsection}{\numberline {7.7.6}ارتباط با سایر ماژول‌ها}{57}{subsubsection.7.7.6}%
+\contentsline {subsubsection}{\numberline {7.7.7}جمع‌بندی}{57}{subsubsection.7.7.7}%
+\contentsline {subsection}{\numberline {7.8}مستندسازی بخش شبیه‌سازی: ماژول \lr {robot.py}}{57}{subsection.7.8}%
+\contentsline {subsubsection}{\numberline {7.8.1}معرفی ماژول}{57}{subsubsection.7.8.1}%
+\contentsline {subsubsection}{\numberline {7.8.2}هدف طراحی}{57}{subsubsection.7.8.2}%
+\contentsline {subsubsection}{\numberline {7.8.3}نقش ماژول در کل سیستم}{57}{subsubsection.7.8.3}%
+\contentsline {subsection}{\numberline {7.9}ساختار کلی و اجزای مهم}{57}{subsection.7.9}%
+\contentsline {subsubsection}{\numberline {7.9.1}نحوه عملکرد}{58}{subsubsection.7.9.1}%
+\contentsline {subsubsection}{\numberline {7.9.2}ارتباط با سایر ماژول‌ها}{58}{subsubsection.7.9.2}%
+\contentsline {subsubsection}{\numberline {7.9.3}جمع‌بندی}{58}{subsubsection.7.9.3}%
+\contentsline {subsection}{\numberline {7.10}مستندسازی بخش شبیه‌سازی: ماژول \lr {controller.py}}{59}{subsection.7.10}%
+\contentsline {subsubsection}{\numberline {7.10.1}معرفی ماژول}{59}{subsubsection.7.10.1}%
+\contentsline {subsubsection}{\numberline {7.10.2}هدف طراحی}{59}{subsubsection.7.10.2}%
+\contentsline {subsubsection}{\numberline {7.10.3}نقش ماژول در کل سیستم}{59}{subsubsection.7.10.3}%
+\contentsline {subsubsection}{\numberline {7.10.4}ساختار کلی و اجزای مهم}{59}{subsubsection.7.10.4}%
+\contentsline {subsubsection}{\numberline {7.10.5}نحوه عملکرد}{59}{subsubsection.7.10.5}%
+\contentsline {subsubsection}{\numberline {7.10.6}ارتباط با سایر ماژول‌ها}{60}{subsubsection.7.10.6}%
+\contentsline {subsubsection}{\numberline {7.10.7}جمع‌بندی}{60}{subsubsection.7.10.7}%
+\contentsline {subsection}{\numberline {7.11}مستندسازی بخش شبیه‌سازی: ماژول \lr {simulation.py}}{60}{subsection.7.11}%
+\contentsline {subsubsection}{\numberline {7.11.1}معرفی ماژول}{60}{subsubsection.7.11.1}%
+\contentsline {subsubsection}{\numberline {7.11.2}هدف طراحی}{60}{subsubsection.7.11.2}%
+\contentsline {subsubsection}{\numberline {7.11.3}نقش ماژول در کل سیستم}{61}{subsubsection.7.11.3}%
+\contentsline {subsubsection}{\numberline {7.11.4}ساختار کلی و اجزای مهم}{61}{subsubsection.7.11.4}%
+\contentsline {subsubsection}{\numberline {7.11.5}نحوه عملکرد}{61}{subsubsection.7.11.5}%
+\contentsline {subsubsection}{\numberline {7.11.6}ارتباط با سایر ماژول‌ها}{61}{subsubsection.7.11.6}%
+\contentsline {subsubsection}{\numberline {7.11.7}جمع‌بندی}{62}{subsubsection.7.11.7}%
+\contentsline {subsection}{\numberline {7.12}مستندسازی بخش شبیه‌سازی: اسکریپت اجرایی \lr {main.py}}{62}{subsection.7.12}%
+\contentsline {subsubsection}{\numberline {7.12.1}معرفی اسکریپت}{62}{subsubsection.7.12.1}%
+\contentsline {subsubsection}{\numberline {7.12.2}هدف طراحی}{62}{subsubsection.7.12.2}%
+\contentsline {subsubsection}{\numberline {7.12.3}ساختار اجرایی و روند شبیه‌سازی}{62}{subsubsection.7.12.3}%
+\contentsline {subsubsection}{\numberline {7.12.4}مدیریت استثنائات و پاک‌سازی منابع}{63}{subsubsection.7.12.4}%
+\contentsline {section}{\numberline {8}ارزیابی عملکرد و نتایج اجرای همزاد دیجیتال (\lr {Execution Results})}{63}{section.8}%
+\contentsline {subsection}{\numberline {8.1}پیکربندی و راه‌اندازی اولیه (\lr {System Initialization})}{63}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}تحلیل پایپ‌لاین استنتاج (\lr {Inference Pipeline Analysis})}{63}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}همگام‌سازی سایبر-فیزیکی (\lr {Cyber-Physical Synchronization})}{64}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}خروجی بصری و رابط کاربری (\lr {Live Monitoring UI})}{64}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}جمع‌بندی اجرا}{65}{subsection.8.5}%

@@ -58,7 +58,8 @@ def run_digital_twin_demo():
         # script and use a relative path.
         # =====================================================================
         image_paths = []
-        for root, dirs, files in os.walk("data"):
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+        for root, dirs, files in os.walk(data_dir):
             for file in sorted(files):
                 if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
                     full_path = os.path.join(root, file)

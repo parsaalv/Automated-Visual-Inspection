@@ -9,27 +9,29 @@ echo.
 :: Navigate to the script's directory
 cd /d "%~dp0"
 
-:: 1. Check or Create Virtual Environment (.venv)
-echo [1/4] Checking Virtual Environment (.venv)...
-if not exist ".venv" (
-    echo [INFO] Virtual environment '.venv' not found. Creating .venv...
-    python -m venv .venv
+set "VENV_DIR=%~dp0..\.venv"
+
+:: 1. Check or Create Virtual Environment (.venv in root directory)
+echo [1/4] Checking Virtual Environment...
+if not exist "%VENV_DIR%" (
+    echo [INFO] Virtual environment not found at '%VENV_DIR%'. Creating .venv...
+    python -m venv "%VENV_DIR%"
     if %errorlevel% neq 0 (
-        echo [ERROR] Failed to create virtual environment '.venv'. Make sure Python is installed.
+        echo [ERROR] Failed to create virtual environment. Make sure Python is installed.
         pause
         exit /b 1
     )
     echo [OK] Virtual environment created successfully.
     set NEED_INSTALL=1
 ) else (
-    echo [OK] Virtual environment '.venv' found.
+    echo [OK] Virtual environment found.
 )
 
 :: 2. Activate Virtual Environment
 echo [2/4] Activating Virtual Environment...
-call .venv\Scripts\activate.bat
+call "%VENV_DIR%\Scripts\activate.bat"
 if %errorlevel% neq 0 (
-    echo [ERROR] Failed to activate virtual environment in '.venv\Scripts\activate.bat'.
+    echo [ERROR] Failed to activate virtual environment at '%VENV_DIR%\Scripts\activate.bat'.
     pause
     exit /b 1
 )
