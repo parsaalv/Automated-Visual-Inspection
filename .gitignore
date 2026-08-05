@@ -18,6 +18,7 @@ runs/
 *.pt
 *.onnx
 *.engine
+*.urdf
 
 # IDE & Editor settings
 .vscode/
