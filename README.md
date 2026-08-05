@@ -1,6 +1,7 @@
 # Automated Visual Inspection: From Object Detection to Anomaly Segmentation
 
 **Courses:** Robotic & Computer Vision | Introduction to Machine Learning
+
 **Professors:** Dr. Hamidreza Taghirad, Amirhossein Nikoofard, Mohammad Javad Ahmadi
 
 **Team Members:**
