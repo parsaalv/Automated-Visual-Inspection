@@ -2,7 +2,7 @@
 
 This directory houses the machine learning ecosystem, dataset processing pipelines, and deep neural network training logs. The primary codebase for data generation, YOLOv8 training, and PatchCore inference tuning is contained within:
 
-📓 **`RV_ProjectV1_Gem.ipynb`**
+📓 **`MVTecAD_Project.ipynb`**
 
 ---
 
@@ -36,7 +36,7 @@ The training pipeline builds a **two-stage industrial inspection system** on top
 
 ## 🛠️ Installation & Running
 
-> ⚠️ **Important:** The notebook (`RV_ProjectV1_Gem.ipynb`) provided in this directory is primarily intended to **demonstrate the full training methodology** — dataset curation, auto-annotation, YOLO training, and PatchCore training — rather than to be a plug-and-play script. It was originally developed and executed in **Google Colab**.
+> ⚠️ **Important:** The notebook (`MVTecAD_Project.ipynb`) provided in this directory is primarily intended to **demonstrate the full training methodology** — dataset curation, auto-annotation, YOLO training, and PatchCore training — rather than to be a plug-and-play script. It was originally developed and executed in **Google Colab**.
 
 To run the notebook cells **as-is** (i.e., downloading the dataset directly via the Kaggle API, as implemented in the code), you will need:
 
@@ -55,7 +55,7 @@ This script will:
 3. Register a dedicated Jupyter kernel: **`Python (RV Model Env)`**.
 4. Launch the Jupyter Notebook interface.
 
-Once Jupyter opens, load `RV_ProjectV1_Gem.ipynb` and make sure the **`Python (RV Model Env)`** kernel is selected before running any cells.
+Once Jupyter opens, load `MVTecAD_Project.ipynb` and make sure the **`Python (RV Model Env)`** kernel is selected before running any cells.
 
 > Note: Because the notebook contains `!pip install` commands designed for cloud environments like Google Colab, you do **not** need to execute those installation cells when running locally — `run_model_setup.bat` already handles all dependencies.
 
