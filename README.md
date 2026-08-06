@@ -66,4 +66,4 @@ This script automatically creates a virtual environment, installs all dependenci
 
 ### 3. (Optional) Explore or Retrain the Models
 
-If you'd like to inspect, modify, or retrain the underlying detection and anomaly models, see **[Model/README.md](Model/README.md)** for instructions on setting up the training notebook environment..
+If you'd like to inspect, modify, or retrain the underlying detection and anomaly models, see **[Model/README.md](Model/README.md)** for instructions on setting up the training notebook environment.
